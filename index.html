@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+		h1{
+			font-family: 'Trebuchet MS', 'Arial';
+			color:pink;
+			background-color: green;
+			display: inline-block;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 id="the-header">The header</h1>
+		<br>
+		<h1>Second header</h1>
+		<header>
+			
+		</header>
+	<section>Content in Section</section>
+	<div>Content in Div</div>
+	<script>
+		var header = document.getElementById('the-header');
+		header.addEventListener('mouseenter',function(){
+			header.style.backgroundColor='purple';
+			header.style.opacity=1;
+			console.log("This is printed")
+			tick();
+			function tick (){
+				var opacity = +header.style.opacity;
+				opacity-=0.1;
+				setTimeout(tick,100);
+			}
+		})
+	</script>
+	<p>	asdadasdadsadasdasdasdasdsadsadsadasdsadasdasdasO<wbr>adsadsadsadsadsadsadsadsadsadsadasdasdasdadasdadasdasdsadsadasdasdsadasdasdaddadada</p>
+</body>
+</html>

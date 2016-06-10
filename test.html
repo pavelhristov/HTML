@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+		<style>
+.info{ border-radius: 10px;}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="post">
+		<fieldset class="info">
+		<legend>User info</legend>
+			<label for="username">Username:</label>
+			<input type="text" placeholder="Username" name="username" id="username">
+			<br>
+			<label for="pass">Password:</label>
+			<input type="password" name="pass" placeholder="pass" id="pass">
+			<br>
+			<label for="">Gender:</label>
+			<label for="male">Male</label>
+			<input type="radio" value="male" id="male" name="gender" checked>
+			<label for="female">Female</label>
+			<input type="radio" value="female" id="female" name="gender" >
+			<br>
+			<input type="hidden" value="test">
+			<select name="subjects" id="classes" multiple="multiple">
+				<option value="geo">Gegraphy</option>
+				<option value="math">Mathematics</option>
+				<option value="eng">English</option>
+			</select>
+			<br>
+			</fieldset>
+			<fieldset class="info">
+			<legend>Terms and conditions</legend>
+			<label for="terms">Accept the terms</label>
+			<input id="terms" type="checkbox">
+			<br>
+			</fieldset>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Clear Form">
+		</form>
+	</body>
+</html>
